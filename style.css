@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
@@ -10,9 +10,9 @@ body {
     margin: 0;
     padding: 0;
 }
-  
- 
-  
+
+
+
 /* RESET de base */
 * {
     margin: 0;
@@ -37,6 +37,7 @@ header {
     text-align: center;
 }
 
+
 .logo a {
     color: #fff;
     text-transform: uppercase;
@@ -55,7 +56,7 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 15px;
-  
+
 }
 
 nav ul li a {
@@ -75,6 +76,10 @@ nav ul li a:hover {
     color: white;
     border-radius: 10px;
 }
+label{
+    color: midnightblue;
+    font-weight: bold;
+}
 
 section {
     padding: 60px 20px;
@@ -84,7 +89,7 @@ section {
 
 .titre {
     background: url('./photo plage.jpg');
-    opacity: 0,6;
+    opacity: 0, 6;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -134,7 +139,7 @@ section {
     width: 70%;
     position: absolute;
     bottom: 30px;
-    
+
 }
 
 .find-trip form {
@@ -143,7 +148,7 @@ section {
     flex-wrap: wrap;
     gap: 15px;
     color: #fff;
-    bottom:  0px;
+    bottom: 0px;
 }
 
 .find-trip form div,
@@ -233,7 +238,8 @@ footer {
     width: 100%;
     height: 100%;
 }
-video{
+
+video {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -360,7 +366,8 @@ video{
     box-shadow: 0 0 10px black;
     border-radius: 10px;
 }
-.box{
+
+.box {
     border-radius: 10px;
 }
 
@@ -491,6 +498,7 @@ video{
 #hotels .content .box:hover .hotel-content {
     opacity: 1;
 }
+
 /*reservation*/
 /* Styles pour le formulaire de réservation */
 .reservation {
@@ -507,7 +515,7 @@ video{
     text-align: center;
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #333;
+    color: midnightblue;
 }
 
 .reservation label {
@@ -529,7 +537,7 @@ video{
 }
 
 .reservation input:focus {
-    border-color:black;
+    border-color: black;
 }
 
 .reservation button {
@@ -553,6 +561,7 @@ video{
     font-weight: bold;
 }
 
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .reservation {
@@ -568,6 +577,7 @@ video{
         font-size: 0.9rem;
     }
 }
+
 /* ========================= */
 /*       RESPONSIVE CSS      */
 /* ========================= */
@@ -664,120 +674,122 @@ video{
         padding: 10px;
     }
 }
+
 /* ========== RESPONSIVE INDEX PAGE ========== */
 
 @media (max-width: 1024px) {
     header .principal {
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
-  
+
     .logo {
-      text-align: center;
+        text-align: center;
     }
-  
+
     .logo ul {
-      padding-left: 0;
-      text-align: center;
+        padding-left: 0;
+        text-align: center;
     }
-  
+
     .logo ul li {
-      display: inline-block;
-      margin: 10px 10px;
+        display: inline-block;
+        margin: 10px 10px;
     }
-  
+
     .titre {
-      padding: 50px 20px;
-      text-align: center;
+        padding: 50px 20px;
+        text-align: center;
     }
-  
+
     .titre h2 {
-      font-size: 28px;
+        font-size: 28px;
     }
-  
+
     .titre p {
-      font-size: 16px;
+        font-size: 16px;
     }
-  
+
     .bouton {
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
-  
+
     .bouton a.btn {
-      display: inline-block;
-      margin: 5px 0;
+        display: inline-block;
+        margin: 5px 0;
     }
-  
+
     .find-trip form {
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
     }
-  
+
     .find-trip form div {
-      width: 45%;
+        width: 45%;
     }
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .titre h2 {
-      font-size: 24px;
+        font-size: 24px;
     }
-  
+
     .titre p {
-      font-size: 15px;
+        font-size: 15px;
     }
-  
+
     .find-trip form div {
-      width: 100%;
+        width: 100%;
     }
-  
+
     .find-trip input[type="submit"] {
-      width: 100%;
+        width: 100%;
     }
-  
+
     .logo ul li {
-      display: block;
-      margin: 10px 0;
+        display: block;
+        margin: 10px 0;
     }
-  }
-  
-  @media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
     header .logo a {
-      font-size: 22px;
+        font-size: 22px;
     }
-  
+
     .titre h2 {
-      font-size: 20px;
+        font-size: 20px;
     }
-  
+
     .titre p {
-      font-size: 14px;
+        font-size: 14px;
     }
-  
+
     .bouton {
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
-  
+
     .find-trip {
-      padding: 10px;
+        padding: 10px;
     }
-  
+
     .find-trip form {
-      flex-direction: column;
-      gap: 10px;
+        flex-direction: column;
+        gap: 10px;
     }
-  
+
     footer p {
-      font-size: 13px;
-      padding: 10px;
-      text-align: center;
+        font-size: 13px;
+        padding: 10px;
+        text-align: center;
     }
-  }
-  /* ========== Responsive Design ========== */
+}
+
+/* ========== Responsive Design ========== */
 @media screen and (max-width: 992px) {
     .find-trip form {
         flex-direction: column;
@@ -848,7 +860,3 @@ video{
         font-size: 13px;
     }
 }
-
-
-
-
