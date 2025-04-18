@@ -53,6 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <li><a href="./pages/Service.html">Services</a></li>
                 <li><a href="inscription.php">Inscription</a></li>
                 <li><a href="./pages/Contact.php">Contact</a></li>
+                <li><a href="A-propos.html">À propos</a></li>
             </ul>
         </nav>
     </header>
