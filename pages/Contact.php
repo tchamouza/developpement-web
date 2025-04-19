@@ -72,8 +72,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <li><a href="../index.html">Accueil</a></li>
         <li><a href="Service.html">Services</a></li>
         <li><a href="../connexion.php">Connexion</a></li>
-        <li><a href="Contact.html">Contact</a></li>
-        <li><a href="A-propos.html">À propos</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="../A-propos.html">À propos</a></li>
       </ul>
     </nav>
   </header>
