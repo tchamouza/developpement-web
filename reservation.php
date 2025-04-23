@@ -47,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       $errors[] = "Erreur lors de la réservation : " . $e->getMessage();
     }
   }
-}
+  }
 ?>
 
 <!DOCTYPE html>
