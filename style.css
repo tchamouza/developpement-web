@@ -860,3 +860,61 @@ video {
         font-size: 13px;
     }
 }
+/* section à propos */
+.testimony{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: red;
+    height: 800px;
+    flex-wrap: wrap;
+    /* gap: 25px; */
+
+
+}
+
+.test{
+    font-weight:500;
+    text-align: justify;
+}
+
+.test-logo{
+    font-weight: 600;
+}
+
+.test-item-behavior{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+    height: 300px;
+    border-radius: 15px;
+    margin: 20px;
+    background-color: #fff;
+}
+.test-item-behavior:hover{
+    box-shadow: 0 0 10px black;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 480px) {
+    .titre h2 {
+        font-size: 24px;
+    }
+
+    .titre p {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 13px;
+        padding: 8px 16px;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+}
+
+
+
