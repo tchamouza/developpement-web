@@ -76,7 +76,8 @@ nav ul li a:hover {
     color: white;
     border-radius: 10px;
 }
-label{
+
+label {
     color: midnightblue;
     font-weight: bold;
 }
@@ -283,6 +284,173 @@ video {
     text-decoration: none;
 }
 
+/*mes reservations*/
+.reservations-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.page-title {
+    color: midnightblue;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.reservation-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    border-left: 4px solid midnightblue;
+}
+
+.reservation-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.flight-number {
+    background: midnightblue;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.reservation-date {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.reservation-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.route {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.departure,
+.arrival {
+    font-weight: bold;
+}
+
+.arrow {
+    font-size: 1.2rem;
+    color: midnightblue;
+}
+
+.info-group {
+    margin-bottom: 10px;
+}
+
+.info-label {
+    font-weight: bold;
+    color: midnightblue;
+    display: block;
+    margin-bottom: 3px;
+    font-size: 0.9rem;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: midnightblue;
+    text-align: right;
+}
+
+.no-reservations {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.action-buttons {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background: midnightblue;
+    color: white;
+}
+
+.expiry-info {
+    font-size: 0.8rem;
+    color: #666;
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/*dashbord*/
+
+.menu-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid midnightblue;
+    margin-bottom: 15px;
+}
+
+.profile-name {
+    color: midnightblue;
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.action-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: red;
+    color: white;
+}
+
 /* Section Destinations Populaires */
 #popular-destination {
     padding: 0 10px;
@@ -341,7 +509,8 @@ video {
     padding: 2px;
     font-size: 12px;
 }
-.box .content a{
+
+.box .content a {
     margin-top: 10px;
     background-color: aqua;
     color: white;
@@ -865,8 +1034,9 @@ video {
         font-size: 13px;
     }
 }
+
 /* section à propos */
-.testimony{
+.testimony {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     background-color: rgba(221, 226, 224, 0.877);
@@ -877,16 +1047,16 @@ video {
 
 }
 
-.test{
-    font-weight:500;
+.test {
+    font-weight: 500;
     text-align: justify;
 }
 
-.test-logo{
+.test-logo {
     font-weight: 600;
 }
 
-.test-item-behavior{
+.test-item-behavior {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -897,7 +1067,8 @@ video {
     margin: 20px;
     background-color: #fff;
 }
-.test-item-behavior:hover{
+
+.test-item-behavior:hover {
     box-shadow: 0 0 10px black;
     transition: 0.5s;
 }
@@ -920,6 +1091,3 @@ video {
         font-size: 13px;
     }
 }
-
-
-

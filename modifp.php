@@ -264,20 +264,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="avion (1).png" alt="Logo du site" width="30px" height="30px">
 
-            <a href="index.html">airline<span>TRAVEL</span></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="dashbord.php">Mon Profil</a></li>
-                <li><a href="deconnection.php">Déconnexion</a></li>
-            </ul>
-        </nav>
-    </header>
+    <a href="index.html">Accueil</a>
+    <a href="dashbord.php">Mon Profil</a>
+    <a href="deconnection.php">Déconnexion</a>
+
+
 
     <div class="form-container">
         <h1 style="color: midnightblue; text-align: center;">Modifier mon profil</h1>
@@ -385,15 +377,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </form>
         </div>
     </div>
-
-    <footer>
-        <div class="logo">
-            <p>© copyright @ 2025 par <a href="#" style="font-size: 20px;">airline<span style="font-size: 25px;">TRAVEL</span></a>. Tous droits réservés.</p>
-        </div>
-        <p>📍 Adresse : Lomé-Togo</p>
-        <p>📞 <a href="tel:+22892558895" style="color: white; text-decoration: none;">+228 92 58 88 95</a></p>
-        <p>📧 <a href="mailto:contact@airlinetravel.tg" style="color: white; text-decoration: none;">contact@airlinetravel.tg</a></p>
-    </footer>
 </body>
 
 </html>

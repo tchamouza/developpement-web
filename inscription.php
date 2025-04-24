@@ -111,7 +111,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <header>
         <div class="logo">
-        <img src="avion (1).png" alt="Logo du site" width="30px" height="30px" >
+            <img src="avion (1).png" alt="Logo du site" width="30px" height="30px">
 
             <a href="#">airline<span>TRAVEL</span></a>
         </div>
@@ -168,16 +168,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </form>
     <footer>
         <div class="logo">
-            <p>© copyright @ 2025 by Entreprise <a href="#" style="font-size: 20px;">airline<span
+            <p>© copyright @ 2025 par <a href="#" style="font-size: 20px;">airline<span
                         style="font-size: 25px;">TRAVEL</span></a>. Tous droits réservés.</p>
-
         </div>
-        <p>📍 Adresse : Lome-Togo</p>
-        <p>📞 <a href="tel:+22892558895" style="color: white ;text-decoration: none;">+228 92 58 88 95</a></p>
-        <p>📧 <a href="mailto:miayisoukoulou@gmail.com" style="color: white ;text-decoration: none;">miayisoukoulou@gmail.com</a>
-        </p>
+        <p>📍 Adresse : Lomé-Togo</p>
+        <p>📞 <a href="tel:+22892558895" style="color: white; text-decoration: none;">+228 92 58 88 95</a></p>
+        <p>📧 <a href="mailto:contact@airlinetravel.tg"
+                style="color: white; text-decoration: none;">contact@airlinetravel.tg</a></p>
     </footer>
-
     <script src="./scripts.js"></script>
 </body>
 
