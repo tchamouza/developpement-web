@@ -61,19 +61,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 
 <body>
-  <header>
-    <div class="logo">
-      <img src="avion (1).png" alt="Logo du site" width="30px" height="30px">
-
-      <a href="#">airline<span>TRAVEL</span></a>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="./dashbord.php">Profil</a></li>
-        <li><a href="deconnection.php">Déconnexion</a></li>
-      </ul>
-    </nav>
-  </header>
 
   <section>
     <form class="reservation" action="" method="POST" autocomplete="off">

@@ -43,7 +43,6 @@ $reservations = $stmt->fetchAll();
         <?php if (empty($reservations)): ?>
             <div class="no-reservations">
                 <p>Vous n'avez aucune réservation pour le moment.</p>
-                <a href="reservation.php" class="btn btn-primary">Faire une réservation</a>
             </div>
         <?php else: ?>
             <?php foreach ($reservations as $reservation): ?>
@@ -98,7 +97,7 @@ $reservations = $stmt->fetchAll();
         <?php endif; ?>
 
         <div class="action-buttons">
-            <a href="reservation.php" class="btn btn-primary">Faire une nouvelle réservation</a>
+            <a href="reservation.php" class="btn btn-primary">Faire une réservation</a>
         </div>
     </div>
 </body>

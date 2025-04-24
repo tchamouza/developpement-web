@@ -265,7 +265,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <body>
 
-    <a href="index.html">Accueil</a>
     <a href="dashbord.php">Mon Profil</a>
     <a href="deconnection.php">Déconnexion</a>
 

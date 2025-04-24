@@ -451,6 +451,101 @@ video {
     color: white;
 }
 
+/*confirmationdevol*/
+.confirmation-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.ticket {
+    border: 2px solid midnightblue;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    background: #f8f9fa;
+    position: relative;
+}
+
+.flight-number-badge {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    background: midnightblue;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.ticket-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px dashed midnightblue;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.ticket-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.info-group {
+    margin-bottom: 15px;
+}
+
+.info-label {
+    font-weight: bold;
+    color: midnightblue;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.action-buttons {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: midnightblue;
+    color: white;
+}
+
+.btn-secondary {
+    background: #6c757d;
+    color: white;
+}
+
+.confirmation-title {
+    text-align: center;
+    color: midnightblue;
+    margin-bottom: 10px;
+}
+
+.confirmation-subtitle {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
 /* Section Destinations Populaires */
 #popular-destination {
     padding: 0 10px;
