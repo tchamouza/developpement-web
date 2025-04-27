@@ -123,3 +123,25 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+        document.addEventListener('DOMContentLoaded', function() {
+            const dropBtn = document.querySelector('.dropbtn');
+            const dropdownContent = document.getElementById('userInfo');
+
+            // Toggle du menu dropdown
+            dropBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                dropdownContent.classList.toggle('show');
+            });
+
+            // Fermer le menu si on clique ailleurs
+            document.addEventListener('click', function() {
+                if (dropdownContent.classList.contains('show')) {
+                    dropdownContent.classList.remove('show');
+                }
+            });
+
+            // Empêcher la fermeture quand on clique dans le menu
+            dropdownContent.addEventListener('click', function(e) {
+                e.stopPropagation();
+            });
+        });

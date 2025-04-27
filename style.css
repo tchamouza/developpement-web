@@ -405,52 +405,6 @@ video {
     font-style: italic;
 }
 
-/*dashbord*/
-
-.menu-user {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
-}
-
-.profile-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid midnightblue;
-    margin-bottom: 15px;
-}
-
-.profile-name {
-    color: midnightblue;
-    margin: 10px 0;
-    font-size: 24px;
-}
-
-.action-buttons {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.btn {
-    background-color: black;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 0 10px;
-    display: inline-block;
-    transition: background-color 0.3s;
-}
-
-.btn:hover {
-    background-color: red;
-    color: white;
-}
-
 /*confirmationdevol*/
 .confirmation-container {
     max-width: 800px;
