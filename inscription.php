@@ -164,7 +164,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <a style="text-decoration: none; color:midnightblue" href="./connexion.php">Connectez-vous</a>
         </p><br>
 
-        <button type="submit">Soumettre</button>
+        <button type="submit">S'inscrire</button>
     </form>
     <footer>
         <div class="logo">
