@@ -56,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <title>Contact</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../contact style.css">
+  <link rel="stylesheet" href="../contact styles.css">
 
 </head>
 

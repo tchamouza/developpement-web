@@ -25,7 +25,7 @@ header {
 }
 
 .logo span {
-    color: rgb(238, 56, 11);
+    color: rgba(214, 153, 40, 0.932); 
     font-weight: bold;
     font-size: 2rem;
 }
@@ -50,13 +50,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: red;
+    background:  rgba(214, 153, 40, 0.932);
     color: white;
     border-radius: 10px;
 }
 
 
 form {
+    background-color: #f9f9f9;
     max-width: 500px;
     margin: 0 auto;
     background-color: white;
@@ -100,6 +101,8 @@ textarea {
 }
   
 button {
+    margin-left: 35%;
+    width: 30%;
     color:black;
     padding: 10px 20px;
     text-transform: uppercase;
@@ -110,7 +113,7 @@ button {
 }
   
 button:hover {
-    background-color: red;
+    background-color: rgba(214, 153, 40, 0.932);
     border-radius: 10px;
     color: white;
 }
