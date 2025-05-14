@@ -229,7 +229,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
 
         .btn-submit {
-            background: midnightblue;
+            background: black;
             color: white;
             padding: 12px 25px;
             border: none;
@@ -240,7 +240,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
 
         .btn-submit:hover {
-            background: #0a246a;
+            background:rgba(214, 153, 40, 0.932);
         }
 
         .alert {
@@ -260,15 +260,56 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             color: #2e7d32;
             border-left: 4px solid #2e7d32;
         }
+        nav.navigation{
+            width: 50%;
+            margin-left:50%;
+            display: inline;
+            padding:10px 0;
+          
+        }
+        nav.navigation a{
+          
+            text-decoration:none;
+            border:10px;
+            color:white;
+             padding:10px;
+            font-family: arial;
+            border-radius: 10px;
+        }
+        nav.navigation a:hover{
+               background-color:rgba(214, 153, 40, 0.932);
+        }
+ label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #555;
+}
+ input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+ input:focus {
+    border-color: black;
+}
+
     </style>
 </head>
 
 <body>
-
-    <a href="dashbord.php">Mon Profil</a>
+<header>
+    <nav class="navigation">
+    <a href="./dashbord.php">Tableau de bord</a>
     <a href="deconnection.php">Déconnexion</a>
-
-
+    </nav>
+</header>
 
     <div class="form-container">
         <h1 style="color: midnightblue; text-align: center;">Modifier mon profil</h1>

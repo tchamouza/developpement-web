@@ -48,7 +48,7 @@ $utilisateur = $_SESSION['utilisateur'];
             display: flex;
             justify-content: flex-end;
             padding: 15px 30px;
-            background-color: var(--white);
+            background-color: black;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
@@ -57,7 +57,7 @@ $utilisateur = $_SESSION['utilisateur'];
         }
 
         .dropbtn {
-            background-color: var(--primary-color);
+            background-color:black;
             color: white;
             padding: 10px 20px;
             border: none;
@@ -68,7 +68,7 @@ $utilisateur = $_SESSION['utilisateur'];
         }
 
         .dropbtn:hover {
-            background-color: var(--secondary-color);
+            background-color:rgba(214, 153, 40, 0.932);
         }
 
         .dropdown-content {
@@ -111,7 +111,7 @@ $utilisateur = $_SESSION['utilisateur'];
             width: 100%;
             padding: 10px;
             margin: 8px 0;
-            background-color: var(--primary-color);
+            background-color: black;
             color: white;
             text-align: center;
             text-decoration: none;
@@ -120,7 +120,7 @@ $utilisateur = $_SESSION['utilisateur'];
         }
 
         .btn:hover {
-            background-color: var(--secondary-color);
+            background-color: rgba(214, 153, 40, 0.932);
             transform: translateY(-2px);
         }
 

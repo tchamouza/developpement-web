@@ -27,15 +27,37 @@ $reservations = $stmt->fetchAll();
     <link rel="icon" type="image/png" href="avion (1).png">
     <title>Mes Réservations - Airline Travel</title>
     <link rel="stylesheet" href="./style.css">
+    <style>
+        nav.navigation{
+            width: 50%;
+            margin-left:50%;
+            display: inline;
+            padding:10px 0;
+          
+        }
+        nav.navigation a{
+          
+            text-decoration:none;
+            border:10px;
+            color:white;
+             padding:10px;
+            font-family: arial;
+            border-radius: 10px;
+        }
+        nav.navigation a:hover{
+               background-color:rgba(214, 153, 40, 0.932);
+        }
+    </style>
 
 </head>
 
 <body>
-
-    <a href="./dashbord.php">Mon Profil</a>
-
+<header>
+    <nav class="navigation">
+    <a href="./dashbord.php">Tableau de bord</a>
     <a href="deconnection.php">Déconnexion</a>
-
+    </nav>
+</header>
 
     <div class="reservations-container">
         <h1 class="page-title">Mes Réservations</h1>
