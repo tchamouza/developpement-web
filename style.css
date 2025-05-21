@@ -20,12 +20,14 @@ header {
 
 
 .logo a {
-    color: gray;;
+    color: gray;
+    ;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 900;
     font-size: 1.5rem;
 }
+
 .logo p a {
     color: gray;
     text-decoration: none;
@@ -173,7 +175,7 @@ section {
 
 footer {
     background: rgb(209, 208, 208);
-    color:rgba(230, 230, 230, 0.918);
+    color: rgba(230, 230, 230, 0.918);
     padding: 20px;
     text-align: center;
 }
@@ -508,11 +510,12 @@ video {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 20px;
-    color:  rgba(214, 153, 40, 0.932);;
+    color: rgba(214, 153, 40, 0.932);
+    ;
 }
 
 .reservation label {
-    margin-left:12.5%;
+    margin-left: 12.5%;
     color: #555;
 }
 
@@ -582,11 +585,13 @@ label {
     font-weight: bold;
     margin-bottom: 5px;
     text-align: left;
+    margin-left: 12.5%;
 }
 
 input,
-textarea,button{
-   text-align: center;
+textarea,
+button {
+    text-align: center;
     width: 75%;
     padding: 10px;
     margin-bottom: 15px;
@@ -598,6 +603,7 @@ textarea,button{
 textarea {
     resize: none;
 }
+
 button:hover {
     background-color: rgba(214, 153, 40, 0.932);
     border-radius: 10px;
@@ -622,7 +628,8 @@ footer {
     flex-wrap: wrap;
     gap: 25px;
 }
-.contact-form button{
+
+.contact-form button {
     text-align: center;
 }
 
@@ -651,6 +658,7 @@ footer {
     box-shadow: 0 0 10px black;
     transition: 0.5s;
 }
+
 /* Responsive Design */
 
 /* Pour les écrans jusqu'à 1200px */
@@ -659,12 +667,12 @@ footer {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .find-trip form div,
     .find-trip form input[type="submit"] {
         width: 80%;
     }
-    
+
     .find-trip form input[type="submit"] {
         margin-top: 10px;
     }
@@ -676,25 +684,25 @@ footer {
         flex-direction: column;
         padding: 15px;
     }
-    
+
     .logo {
         margin-bottom: 15px;
     }
-    
+
     nav ul {
         flex-wrap: wrap;
         justify-content: center;
     }
-    
+
     .testimony {
         grid-template-columns: repeat(2, 1fr);
         height: auto;
     }
-    
+
     #service .img-desc {
         flex-direction: column;
     }
-    
+
     #service .img-desc .left,
     #service .img-desc .right {
         width: 100%;
@@ -706,41 +714,41 @@ footer {
     .titre h2 {
         font-size: 36px;
     }
-    
+
     .titre p {
         font-size: 16px;
     }
-    
+
     .bouton {
         flex-direction: column;
         gap: 10px;
     }
-    
+
     .find-trip {
         width: 90%;
         position: relative;
         margin-top: 30px;
     }
-    
+
     #popular-destination .content,
     #offre .content,
     #hotels .content {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .reservation {
         width: 90%;
     }
-    
+
     .reservation input,
     .reservation textarea {
         width: 90%;
     }
-    
+
     .contact-form form {
         width: 90%;
     }
-    
+
     .contact-form input,
     .contact-form textarea {
         width: 90%;
@@ -753,40 +761,40 @@ footer {
         flex-direction: column;
         gap: 5px;
     }
-    
+
     nav ul li a {
         display: block;
         padding: 8px;
     }
-    
+
     .titre {
         height: auto;
         padding: 60px 20px;
     }
-    
+
     .testimony {
         grid-template-columns: 1fr;
     }
-    
+
     #popular-destination .content,
     #offre .content,
     #hotels .content {
         grid-template-columns: 1fr;
     }
-    
+
     .reservation button,
     .contact-form button {
         width: 90%;
     }
-    
+
     footer {
         padding: 15px;
     }
-    
+
     footer .logo p {
         font-size: 14px;
     }
-    
+
     footer p {
         font-size: 14px;
     }
@@ -797,27 +805,27 @@ footer {
     .logo a {
         font-size: 1.2rem;
     }
-    
+
     .logo span {
         font-size: 1.5rem;
     }
-    
+
     .titre h2 {
         font-size: 28px;
     }
-    
+
     .title {
         font-size: 16px;
     }
-    
+
     .hero h1 {
         font-size: 28px;
     }
-    
+
     .hero p {
         font-size: 16px;
     }
-    
+
     .reservation h1,
     .contact-form h1 {
         font-size: 24px;
