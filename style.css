@@ -5,27 +5,6 @@
     font-family: century;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-
-
-/* RESET de base */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-}
-
 header {
     background-color: #000;
     color: #fff;
@@ -39,8 +18,14 @@ header {
 
 
 .logo a {
-    color: #fff;
+    color: gray;;
     text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+.logo p a {
+    color: gray;
     text-decoration: none;
     font-weight: 900;
     font-size: 1.5rem;
@@ -63,7 +48,6 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
     padding: 10px 20px;
-    text-transform: uppercase;
     border: 1px solid transparent;
     font-weight: 500;
     transition: 0.6s ease;
@@ -77,10 +61,6 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
-label {
-    color: midnightblue;
-    font-weight: bold;
-}
 
 section {
     padding: 60px 20px;
@@ -89,7 +69,7 @@ section {
 }
 
 .titre {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('./pages/image/slider3.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./pages/image/slider3.jpg');
     opacity: 1;
     background-blend-mode: darken;
     background-position: center;
@@ -105,7 +85,7 @@ section {
 }
 
 .titre h2 {
-    color:rgba(214, 153, 40, 0.932);
+    color: rgba(214, 153, 40, 0.932);
     font-size: 50px;
     margin-bottom: 10px;
 }
@@ -190,8 +170,8 @@ section {
 }
 
 footer {
-    background: #000;
-    color: #fff;
+    background: rgb(209, 208, 208);
+    color:rgba(230, 230, 230, 0.918);
     padding: 20px;
     text-align: center;
 }
@@ -286,221 +266,6 @@ video {
     text-decoration: none;
 }
 
-/*mes reservations*/
-.reservations-container {
-    max-width: 1000px;
-    margin: 30px auto;
-    padding: 20px;
-}
-
-.page-title {
-    color: midnightblue;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.reservation-card {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
-    position: relative;
-    border-left: 4px solid midnightblue;
-}
-
-.reservation-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #eee;
-}
-
-.flight-number {
-    background: midnightblue;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 4px;
-    font-weight: bold;
-}
-
-.reservation-date {
-    color: #666;
-    font-size: 0.9rem;
-}
-
-.reservation-body {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.route {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
-}
-
-.departure,
-.arrival {
-    font-weight: bold;
-}
-
-.arrow {
-    font-size: 1.2rem;
-    color: midnightblue;
-}
-
-.info-group {
-    margin-bottom: 10px;
-}
-
-.info-label {
-    font-weight: bold;
-    color: midnightblue;
-    display: block;
-    margin-bottom: 3px;
-    font-size: 0.9rem;
-}
-
-.price {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: midnightblue;
-    text-align: right;
-}
-
-.no-reservations {
-    text-align: center;
-    padding: 40px;
-    color: #666;
-    font-size: 1.1rem;
-}
-
-.action-buttons {
-    margin-top: 30px;
-    text-align: center;
-}
-
-.btn {
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    display: inline-block;
-    margin: 0 10px;
-    font-weight: bold;
-}
-
-.btn-primary {
-    background: midnightblue;
-    color: white;
-}
-
-.expiry-info {
-    font-size: 0.8rem;
-    color: #666;
-    text-align: center;
-    margin-top: 20px;
-    font-style: italic;
-}
-
-/*confirmationdevol*/
-.confirmation-container {
-    max-width: 800px;
-    margin: 30px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-
-.ticket {
-    border: 2px solid midnightblue;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 20px 0;
-    background: #f8f9fa;
-    position: relative;
-}
-
-.flight-number-badge {
-    position: absolute;
-    top: -15px;
-    right: 20px;
-    background: midnightblue;
-    color: white;
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-weight: bold;
-    font-size: 1.2rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.ticket-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px dashed midnightblue;
-    padding-bottom: 15px;
-    margin-bottom: 15px;
-    margin-top: 10px;
-}
-
-.ticket-body {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.info-group {
-    margin-bottom: 15px;
-}
-
-.info-label {
-    font-weight: bold;
-    color: midnightblue;
-    display: block;
-    margin-bottom: 5px;
-}
-
-.action-buttons {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.btn {
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
-    display: inline-block;
-}
-
-.btn-primary {
-    background: midnightblue;
-    color: white;
-}
-
-.btn-secondary {
-    background: #6c757d;
-    color: white;
-}
-
-.confirmation-title {
-    text-align: center;
-    color: midnightblue;
-    margin-bottom: 10px;
-}
-
-.confirmation-subtitle {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 1.1rem;
-}
 
 /* Section Destinations Populaires */
 #popular-destination {
@@ -724,7 +489,6 @@ video {
     opacity: 1;
 }
 
-/*reservation*/
 /* Styles pour le formulaire de réservation */
 .reservation {
     max-width: 600px;
@@ -734,24 +498,24 @@ video {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-family: Arial, sans-serif;
+    align-items: center;
+    text-align: center;
 }
 
 .reservation h1 {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 20px;
-    color: midnightblue;
+    color:  rgba(214, 153, 40, 0.932);;
 }
 
 .reservation label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 1rem;
+    margin-left:12.5%;
     color: #555;
 }
 
 .reservation input {
-    width: 100%;
+    width: 75%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
@@ -766,19 +530,18 @@ video {
 }
 
 .reservation button {
-    width: 100%;
-    padding: 10px;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    width: 30%;
+    color: black;
+    padding: 10px 20px;
+    font-weight: 500;
+    text-align: center;
+    font-weight: bold;
 }
 
 .reservation button:hover {
     background-color: rgba(214, 153, 40, 0.932);
+    border-radius: 10px;
+    color: white;
 }
 
 .reservation span {
@@ -786,304 +549,66 @@ video {
     font-weight: bold;
 }
 
+/*contact*/
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .reservation {
-        padding: 15px;
-    }
-
-    .reservation h1 {
-        font-size: 1.5rem;
-    }
-
-    .reservation input,
-    .reservation button {
-        font-size: 0.9rem;
-    }
+form {
+    background-color: #f9f9f9;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* ========================= */
-/*       RESPONSIVE CSS      */
-/* ========================= */
-
-@media (max-width: 1024px) {
-    .img-desc {
-        flex-direction: column;
-    }
-
-    .img-desc .left,
-    .img-desc .right {
-        width: 100%;
-        margin: 0;
-    }
-
-    .img-desc .right {
-        margin-top: 20px;
-    }
-
-    #popular-destination .content,
-    #offre .content,
-    #hotels .content {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 4px;
+    color: midnightblue;
+    text-align: center;
 }
 
-@media (max-width: 768px) {
-    .title {
-        font-size: 16px;
-        margin: 50px 10px;
-    }
-
-    .img-desc .right h3 {
-        font-size: 20px;
-    }
-
-    .img-desc .right p,
-    .img-desc .right a {
-        font-size: 13px;
-    }
-
-    .box .content h4 {
-        font-size: 20px;
-    }
-
-    .box .content p {
-        font-size: 11px;
-    }
-
-    .box .content a {
-        font-size: 12px;
-        padding: 6px 15px;
-    }
-
-    .hotel-content h2 {
-        font-size: 20px;
-    }
+.hero p {
+    font-size: 20px;
+    margin-bottom: 4px;
+    color: #000;
+    text-align: center;
 }
 
-@media (max-width: 480px) {
-    header .logo a {
-        font-size: 20px;
-    }
-
-    .img-desc .right h3 {
-        font-size: 18px;
-    }
-
-    .img-desc .right p {
-        font-size: 12px;
-    }
-
-    .img-desc .right a {
-        font-size: 12px;
-        padding: 6px 15px;
-    }
-
-    .box .content a {
-        font-size: 11px;
-        padding: 6px 10px;
-    }
-
-    #hotels .title {
-        font-size: 1.5rem;
-    }
-
-    .hotel-content h2 {
-        font-size: 18px;
-    }
-
-    footer p {
-        font-size: 13px;
-        text-align: center;
-        padding: 10px;
-    }
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
 }
 
-/* ========== RESPONSIVE INDEX PAGE ========== */
-
-@media (max-width: 1024px) {
-    header .principal {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .logo {
-        text-align: center;
-    }
-
-    .logo ul {
-        padding-left: 0;
-        text-align: center;
-    }
-
-    .logo ul li {
-        display: inline-block;
-        margin: 10px 10px;
-    }
-
-    .titre {
-        padding: 50px 20px;
-        text-align: center;
-    }
-
-    .titre h2 {
-        font-size: 28px;
-    }
-
-    .titre p {
-        font-size: 16px;
-    }
-
-    .bouton {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .bouton a.btn {
-        display: inline-block;
-        margin: 5px 0;
-    }
-
-    .find-trip form {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .find-trip form div {
-        width: 45%;
-    }
+input,
+textarea,button{
+   text-align: center;
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
 }
 
-@media (max-width: 768px) {
-    .titre h2 {
-        font-size: 24px;
-    }
-
-    .titre p {
-        font-size: 15px;
-    }
-
-    .find-trip form div {
-        width: 100%;
-    }
-
-    .find-trip input[type="submit"] {
-        width: 100%;
-    }
-
-    .logo ul li {
-        display: block;
-        margin: 10px 0;
-    }
+textarea {
+    resize: none;
+}
+button:hover {
+    background-color: rgba(214, 153, 40, 0.932);
+    border-radius: 10px;
+    color: white;
 }
 
-@media (max-width: 480px) {
-    header .logo a {
-        font-size: 22px;
-    }
 
-    .titre h2 {
-        font-size: 20px;
-    }
-
-    .titre p {
-        font-size: 14px;
-    }
-
-    .bouton {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .find-trip {
-        padding: 10px;
-    }
-
-    .find-trip form {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    footer p {
-        font-size: 13px;
-        padding: 10px;
-        text-align: center;
-    }
-}
-
-/* ========== Responsive Design ========== */
-@media screen and (max-width: 992px) {
-    .find-trip form {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .find-trip form div,
-    .find-trip form input[type="submit"] {
-        width: 100%;
-    }
-
-    .btn {
-        padding: 10px;
-        font-size: 14px;
-    }
-
-    .titre h2 {
-        font-size: 32px;
-    }
-
-    .titre p {
-        font-size: 16px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 10px;
-    }
-
-    .logo {
-        margin-bottom: 10px;
-    }
-
-    .titre {
-        padding: 20px;
-        text-align: center;
-    }
-
-    .bouton {
-        flex-direction: column;
-        gap: 10px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .titre h2 {
-        font-size: 24px;
-    }
-
-    .titre p {
-        font-size: 14px;
-    }
-
-    .btn {
-        font-size: 13px;
-        padding: 8px 16px;
-    }
-
-    footer {
-        font-size: 13px;
-    }
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(245, 244, 244, 0.781);
+    color: gray;
+    margin-top: 70px;
 }
 
 /* section à propos */
@@ -1093,9 +618,10 @@ video {
     background-color: rgba(221, 226, 224, 0.877);
     height: 800px;
     flex-wrap: wrap;
-    /* gap: 25px; */
-
-
+    gap: 25px;
+}
+.contact-form button{
+    text-align: center;
 }
 
 .test {
@@ -1122,23 +648,4 @@ video {
 .test-item-behavior:hover {
     box-shadow: 0 0 10px black;
     transition: 0.5s;
-}
-
-@media screen and (max-width: 480px) {
-    .titre h2 {
-        font-size: 24px;
-    }
-
-    .titre p {
-        font-size: 14px;
-    }
-
-    .btn {
-        font-size: 13px;
-        padding: 8px 16px;
-    }
-
-    footer {
-        font-size: 13px;
-    }
 }
