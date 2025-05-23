@@ -867,7 +867,7 @@ footer {
 }
 
 .mobile-nav ul {
-    margin-top:40px;
+    margin-top:10px;
     list-style: none;
     display: flex;
     flex-direction: column;
