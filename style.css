@@ -9,19 +9,16 @@
 
 header {
     background-color: #000;
+    width: 100%;
     color: #fff;
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    text-align: center;
 }
-
-
 .logo a {
     color: gray;
-    ;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 900;
@@ -40,7 +37,6 @@ header {
     font-weight: bold;
     font-size: 2rem;
 }
-
 nav ul {
     list-style: none;
     display: flex;
@@ -829,5 +825,92 @@ footer {
     .reservation h1,
     .contact-form h1 {
         font-size: 24px;
+    }
+}
+/* Menu Burger */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1001;
+
+}
+
+.menu-toggle span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: #000;
+    z-index: 1000;
+    padding: 80px 20px 20px;
+    transition: right 0.3s ease;
+}
+
+.mobile-nav.active {
+    right: 0;
+}
+
+.mobile-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mobile-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    transition: color 0.3s;
+}
+
+.mobile-nav ul li a:hover {
+    color: rgba(214, 153, 40, 0.932);
+}
+
+/* Animation du bouton burger */
+.menu-toggle.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Afficher le menu burger seulement sur mobile */
+@media (max-width: 992px) {
+    nav ul {
+        display: none;
+    }
+    
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+@media (min-width: 993px) {
+    .mobile-nav {
+        display: none;
     }
 }
