@@ -15,29 +15,29 @@ ob_start();
                         <label for="destination" class="block font-medium text-sm text-gray-700">Destination</label>
                         <select id="destination" name="destination" class="block mt-1 w-full border-gray-300 rounded-md shadow-sm" required>
                             <option value="">Choisissez une destination</option>
-                            <option value="France">France</option>
-                            <option value="Japon">Japon</option>
-                            <option value="Égypte">Égypte</option>
-                            <option value="Brésil">Brésil</option>
-                            <option value="Italie">Italie</option>
-                            <option value="Jamaïque">Jamaïque</option>
-                            <option value="Grèce">Grèce</option>
-                            <option value="Maldives">Maldives</option>
-                            <option value="Thaïlande">Thaïlande</option>
-                            <option value="Autre">Autre</option>
+                            <option value="France" <?= (isset($_POST['destination']) && $_POST['destination'] === 'France') ? 'selected' : '' ?>>France</option>
+                            <option value="Japon" <?= (isset($_POST['destination']) && $_POST['destination'] === 'Japon') ? 'selected' : '' ?>>Japon</option>
+                            <option value="Égypte" <?= (isset($_POST['destination']) && $_POST['destination'] === 'Égypte') ? 'selected' : '' ?>>Égypte</option>
+                            <option value="Brésil" <?= (isset($_POST['destination']) && $_POST['destination'] === 'Brésil') ? 'selected' : '' ?>>Brésil</option>
+                            <option value="Italie" <?= (isset($_POST['destination']) && $_POST['destination'] === 'Italie') ? 'selected' : '' ?>>Italie</option>
+                            <option value="Jamaïque" <?= (isset($_POST['destination']) && $_POST['destination'] === 'Jamaïque') ? 'selected' : '' ?>>Jamaïque</option>
+                            <option value="Grèce" <?= (isset($_POST['destination']) && $_POST['destination'] === 'Grèce') ? 'selected' : '' ?>>Grèce</option>
+                            <option value="Maldives" <?= (isset($_POST['destination']) && $_POST['destination'] === 'Maldives') ? 'selected' : '' ?>>Maldives</option>
+                            <option value="Thaïlande" <?= (isset($_POST['destination']) && $_POST['destination'] === 'Thaïlande') ? 'selected' : '' ?>>Thaïlande</option>
+                            <option value="Autre" <?= (isset($_POST['destination']) && $_POST['destination'] === 'Autre') ? 'selected' : '' ?>>Autre</option>
                         </select>
                     </div>
 
                     <!-- Date de départ -->
                     <div class="mb-4">
                         <label for="date_depart" class="block font-medium text-sm text-gray-700">Date de départ</label>
-                        <input id="date_depart" class="block mt-1 w-full border-gray-300 focus:border-yellow-500 focus:ring-yellow-500 rounded-md shadow-sm" type="date" name="date_depart" min="<?= date('Y-m-d') ?>" required>
+                        <input id="date_depart" class="block mt-1 w-full border-gray-300 focus:border-yellow-500 focus:ring-yellow-500 rounded-md shadow-sm" type="date" name="date_depart" value="<?= htmlspecialchars($_POST['date_depart'] ?? '') ?>" min="<?= date('Y-m-d') ?>" required>
                     </div>
 
                     <!-- Date de retour -->
                     <div class="mb-4">
                         <label for="date_retour" class="block font-medium text-sm text-gray-700">Date de retour</label>
-                        <input id="date_retour" class="block mt-1 w-full border-gray-300 focus:border-yellow-500 focus:ring-yellow-500 rounded-md shadow-sm" type="date" name="date_retour" min="<?= date('Y-m-d') ?>" required>
+                        <input id="date_retour" class="block mt-1 w-full border-gray-300 focus:border-yellow-500 focus:ring-yellow-500 rounded-md shadow-sm" type="date" name="date_retour" value="<?= htmlspecialchars($_POST['date_retour'] ?? '') ?>" min="<?= date('Y-m-d') ?>" required>
                     </div>
 
                     <!-- Nombre de personnes -->
@@ -45,12 +45,12 @@ ob_start();
                         <label for="nombre_personnes" class="block font-medium text-sm text-gray-700">Nombre de personnes</label>
                         <select id="nombre_personnes" name="nombre_personnes" class="block mt-1 w-full border-gray-300 rounded-md shadow-sm" required>
                             <option value="">Sélectionnez</option>
-                            <option value="1">1 personne</option>
-                            <option value="2">2 personnes</option>
-                            <option value="3">3 personnes</option>
-                            <option value="4">4 personnes</option>
-                            <option value="5">5 personnes</option>
-                            <option value="6+">6 personnes ou plus</option>
+                            <option value="1" <?= (isset($_POST['nombre_personnes']) && $_POST['nombre_personnes'] === '1') ? 'selected' : '' ?>>1 personne</option>
+                            <option value="2" <?= (isset($_POST['nombre_personnes']) && $_POST['nombre_personnes'] === '2') ? 'selected' : '' ?>>2 personnes</option>
+                            <option value="3" <?= (isset($_POST['nombre_personnes']) && $_POST['nombre_personnes'] === '3') ? 'selected' : '' ?>>3 personnes</option>
+                            <option value="4" <?= (isset($_POST['nombre_personnes']) && $_POST['nombre_personnes'] === '4') ? 'selected' : '' ?>>4 personnes</option>
+                            <option value="5" <?= (isset($_POST['nombre_personnes']) && $_POST['nombre_personnes'] === '5') ? 'selected' : '' ?>>5 personnes</option>
+                            <option value="6+" <?= (isset($_POST['nombre_personnes']) && $_POST['nombre_personnes'] === '6+') ? 'selected' : '' ?>>6 personnes ou plus</option>
                         </select>
                     </div>
 
@@ -59,12 +59,12 @@ ob_start();
                         <label for="type_voyage" class="block font-medium text-sm text-gray-700">Type de voyage</label>
                         <select id="type_voyage" name="type_voyage" class="block mt-1 w-full border-gray-300 rounded-md shadow-sm" required>
                             <option value="">Choisissez le type</option>
-                            <option value="Détente/Plage">Détente/Plage</option>
-                            <option value="Aventure/Montagne">Aventure/Montagne</option>
-                            <option value="Culturel/Ville">Culturel/Ville</option>
-                            <option value="Romantique">Romantique</option>
-                            <option value="Familial">Familial</option>
-                            <option value="Affaires">Affaires</option>
+                            <option value="Détente/Plage" <?= (isset($_POST['type_voyage']) && $_POST['type_voyage'] === 'Détente/Plage') ? 'selected' : '' ?>>Détente/Plage</option>
+                            <option value="Aventure/Montagne" <?= (isset($_POST['type_voyage']) && $_POST['type_voyage'] === 'Aventure/Montagne') ? 'selected' : '' ?>>Aventure/Montagne</option>
+                            <option value="Culturel/Ville" <?= (isset($_POST['type_voyage']) && $_POST['type_voyage'] === 'Culturel/Ville') ? 'selected' : '' ?>>Culturel/Ville</option>
+                            <option value="Romantique" <?= (isset($_POST['type_voyage']) && $_POST['type_voyage'] === 'Romantique') ? 'selected' : '' ?>>Romantique</option>
+                            <option value="Familial" <?= (isset($_POST['type_voyage']) && $_POST['type_voyage'] === 'Familial') ? 'selected' : '' ?>>Familial</option>
+                            <option value="Affaires" <?= (isset($_POST['type_voyage']) && $_POST['type_voyage'] === 'Affaires') ? 'selected' : '' ?>>Affaires</option>
                         </select>
                     </div>
 
@@ -73,12 +73,12 @@ ob_start();
                         <label for="budget" class="block font-medium text-sm text-gray-700">Budget approximatif (€)</label>
                         <select id="budget" name="budget" class="block mt-1 w-full border-gray-300 rounded-md shadow-sm" required>
                             <option value="">Sélectionnez votre budget</option>
-                            <option value="500">Moins de 500€</option>
-                            <option value="1000">500€ - 1000€</option>
-                            <option value="2000">1000€ - 2000€</option>
-                            <option value="3000">2000€ - 3000€</option>
-                            <option value="5000">3000€ - 5000€</option>
-                            <option value="5001">Plus de 5000€</option>
+                            <option value="500" <?= (isset($_POST['budget']) && $_POST['budget'] === '500') ? 'selected' : '' ?>>Moins de 500€</option>
+                            <option value="1000" <?= (isset($_POST['budget']) && $_POST['budget'] === '1000') ? 'selected' : '' ?>>500€ - 1000€</option>
+                            <option value="2000" <?= (isset($_POST['budget']) && $_POST['budget'] === '2000') ? 'selected' : '' ?>>1000€ - 2000€</option>
+                            <option value="3000" <?= (isset($_POST['budget']) && $_POST['budget'] === '3000') ? 'selected' : '' ?>>2000€ - 3000€</option>
+                            <option value="5000" <?= (isset($_POST['budget']) && $_POST['budget'] === '5000') ? 'selected' : '' ?>>3000€ - 5000€</option>
+                            <option value="5001" <?= (isset($_POST['budget']) && $_POST['budget'] === '5001') ? 'selected' : '' ?>>Plus de 5000€</option>
                         </select>
                     </div>
 
@@ -98,5 +98,5 @@ ob_start();
 
 <?php 
 $content = ob_get_clean();
-include '../layout.php';
+include __DIR__ . '/../layout.php';
 ?>

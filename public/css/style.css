@@ -13,87 +13,23 @@ body {
 }
 
 /* Navigation */
-.navbar {
-    background-color: #000;
-    padding: 1rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-.nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.logo .highlight {
-    color: #f59e0b;
-    font-size: 1.8rem;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-}
-
-.nav-links a {
-    color: white;
+.nav-link {
+    color: #d1d5db;
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-.nav-links a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.auth-buttons {
-    display: flex;
-    gap: 1rem;
-}
-
-.btn {
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: 500;
-    cursor: pointer;
     transition: all 0.3s;
-    display: inline-block;
+    border-bottom: 2px solid transparent;
 }
 
-.btn-primary {
-    background-color: #f59e0b;
-    color: black;
-}
-
-.btn-primary:hover {
-    background-color: #d97706;
-}
-
-.btn-secondary {
-    background-color: transparent;
+.nav-link:hover {
     color: white;
-    border: 1px solid white;
+    border-bottom-color: #6b7280;
 }
 
-.btn-secondary:hover {
-    background-color: white;
-    color: black;
+.nav-link.active {
+    color: white;
+    border-bottom-color: #f59e0b;
 }
 
 /* Container */
@@ -134,6 +70,38 @@ body {
     gap: 1rem;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+/* Boutons */
+.btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: #f59e0b;
+    color: black;
+}
+
+.btn-primary:hover {
+    background-color: #d97706;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.btn-secondary:hover {
+    background-color: white;
+    color: black;
 }
 
 /* Cards */
@@ -374,6 +342,8 @@ body {
     padding: 1rem;
     border-radius: 4px;
     margin: 1rem 2rem;
+    position: relative;
+    transition: opacity 0.3s;
 }
 
 .alert-success {

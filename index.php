@@ -27,25 +27,30 @@ require_once 'config/database.php';
 $request = $_SERVER['REQUEST_URI'];
 $path = parse_url($request, PHP_URL_PATH);
 
+// Supprimer les slashes en fin d'URL
+$path = rtrim($path, '/');
+if (empty($path)) {
+    $path = '/';
+}
+
 // Routes
-switch ($path) {
-    case '/':
-    case '/home':
+switch (true) {
+    case $path === '/' || $path === '/home':
         $controller = new HomeController();
         $controller->index();
         break;
         
-    case '/services':
+    case $path === '/services':
         $controller = new HomeController();
         $controller->services();
         break;
         
-    case '/about':
+    case $path === '/about':
         $controller = new HomeController();
         $controller->about();
         break;
         
-    case '/contact':
+    case $path === '/contact':
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $controller = new ContactController();
             $controller->store();
@@ -55,7 +60,7 @@ switch ($path) {
         }
         break;
         
-    case '/login':
+    case $path === '/login':
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $controller = new AuthController();
             $controller->login();
@@ -65,7 +70,7 @@ switch ($path) {
         }
         break;
         
-    case '/register':
+    case $path === '/register':
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $controller = new AuthController();
             $controller->register();
@@ -75,17 +80,17 @@ switch ($path) {
         }
         break;
         
-    case '/logout':
+    case $path === '/logout':
         $controller = new AuthController();
         $controller->logout();
         break;
         
-    case '/dashboard':
+    case $path === '/dashboard':
         $controller = new DashboardController();
         $controller->index();
         break;
         
-    case '/reservations/create':
+    case $path === '/reservations/create':
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $controller = new ReservationController();
             $controller->store();
@@ -95,7 +100,7 @@ switch ($path) {
         }
         break;
         
-    case (preg_match('/\/reservations\/(\d+)\/edit/', $path, $matches) ? true : false):
+    case preg_match('/^\/reservations\/(\d+)\/edit$/', $path, $matches):
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $controller = new ReservationController();
             $controller->update($matches[1]);
@@ -105,7 +110,7 @@ switch ($path) {
         }
         break;
         
-    case (preg_match('/\/reservations\/(\d+)\/delete/', $path, $matches) ? true : false):
+    case preg_match('/^\/reservations\/(\d+)\/delete$/', $path, $matches):
         $controller = new ReservationController();
         $controller->delete($matches[1]);
         break;

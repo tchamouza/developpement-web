@@ -20,14 +20,14 @@
                             </a>
                         </div>
                         <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                            <a href="/" class="nav-link">Accueil</a>
-                            <a href="/services" class="nav-link">Services</a>
+                            <a href="/" class="nav-link <?= ($_SERVER['REQUEST_URI'] === '/' || $_SERVER['REQUEST_URI'] === '/home') ? 'active' : '' ?>">Accueil</a>
+                            <a href="/services" class="nav-link <?= ($_SERVER['REQUEST_URI'] === '/services') ? 'active' : '' ?>">Services</a>
                             <?php if (isset($_SESSION['user_id'])): ?>
-                                <a href="/dashboard" class="nav-link">Tableau de bord</a>
-                                <a href="/reservations/create" class="nav-link">Réserver</a>
+                                <a href="/dashboard" class="nav-link <?= ($_SERVER['REQUEST_URI'] === '/dashboard') ? 'active' : '' ?>">Tableau de bord</a>
+                                <a href="/reservations/create" class="nav-link <?= (strpos($_SERVER['REQUEST_URI'], '/reservations') !== false) ? 'active' : '' ?>">Réserver</a>
                             <?php endif; ?>
-                            <a href="/contact" class="nav-link">Contact</a>
-                            <a href="/about" class="nav-link">À propos</a>
+                            <a href="/contact" class="nav-link <?= ($_SERVER['REQUEST_URI'] === '/contact') ? 'active' : '' ?>">Contact</a>
+                            <a href="/about" class="nav-link <?= ($_SERVER['REQUEST_URI'] === '/about') ? 'active' : '' ?>">À propos</a>
                         </div>
                     </div>
                     
@@ -50,14 +50,14 @@
 
         <!-- Messages flash -->
         <?php if (isset($_SESSION['success'])): ?>
-            <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mx-4 mt-4">
+            <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mx-4 mt-4 alert alert-success">
                 <?= htmlspecialchars($_SESSION['success']) ?>
             </div>
             <?php unset($_SESSION['success']); ?>
         <?php endif; ?>
 
         <?php if (isset($_SESSION['error'])): ?>
-            <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mx-4 mt-4">
+            <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mx-4 mt-4 alert alert-error">
                 <?= htmlspecialchars($_SESSION['error']) ?>
             </div>
             <?php unset($_SESSION['error']); ?>
